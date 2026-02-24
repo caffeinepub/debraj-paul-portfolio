@@ -1,0 +1,305 @@
+{
+  "kind": "build_request",
+  "title": "Debraj Paul — Student Web Developer Personal Portfolio Site",
+  "projectName": "Debraj Paul Portfolio",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Build a full single-page personal portfolio website for Debraj Paul with a dark blue (#0A1628 / #0D2149) and white color scheme, clean modern typography, fully mobile-responsive layout, and a professional, confident, trustworthy tone throughout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Dark Blue and White theme",
+          "Clean modern layout",
+          "Mobile optimized",
+          "Professional, confident, trustworthy"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary background is dark blue, text is white or light gray, accent colors complement the dark blue palette.",
+        "Layout is fully responsive and looks polished on mobile, tablet, and desktop.",
+        "All sections are accessible via smooth scroll navigation.",
+        "Fonts are modern, readable, and consistent across all sections."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a sticky top navigation bar with Debraj Paul's name/logo on the left and anchor links to all 7 sections on the right. On mobile, collapse navigation into a hamburger menu.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Sticky WhatsApp button",
+          "Fast loading"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation stays fixed at the top on scroll.",
+        "Links smoothly scroll to Hero, About, Services, Portfolio, Pricing, Why Choose Me, and Contact sections.",
+        "Hamburger menu works correctly on mobile viewports."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create the Hero section with: headline 'Professional Business Websites in 48 Hours', subheadline 'I help local businesses get more clients with modern, mobile-optimized websites.', two CTA buttons ('Get Free Demo' linking to Contact section and 'Chat on WhatsApp' opening https://wa.me/918730818101), and an urgency line 'Limited Projects Taken Each Month' styled with a badge or highlight.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Professional Business Websites in 48 Hours",
+          "Get Free Demo",
+          "Chat on WhatsApp",
+          "Limited Projects Taken Each Month"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Headline is large and prominent.",
+        "'Chat on WhatsApp' button opens WhatsApp link in a new tab.",
+        "'Get Free Demo' button scrolls to the Contact section.",
+        "Urgency line is visually distinct (e.g., badge, pill, or highlighted text).",
+        "Hero section has a visually engaging background (gradient, pattern, or hero image)."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create the About Me section with the bio: 'I'm Debraj Paul, a student web developer based in Assam. I help lawyers, gyms, coaching centers and small businesses build affordable, professional websites that generate real client inquiries.' Include a profile photo placeholder and a 'Request Free Demo' CTA button that scrolls to the Contact section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "I'm Debraj Paul, a student web developer based in Assam",
+          "Request Free Demo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Bio text is displayed clearly alongside a profile photo or avatar placeholder.",
+        "'Request Free Demo' button scrolls to the Contact section.",
+        "Section layout is clean with ample whitespace."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create the Services section displaying 5 icon cards: 'Business Website Design', 'Landing Pages', 'Website Redesign', 'WhatsApp & Call Integration', and 'Basic SEO Setup'. Each card should have a relevant icon, title, and a short one-line description.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Business Website Design",
+          "Landing Pages",
+          "Website Redesign",
+          "WhatsApp & Call Integration",
+          "Basic SEO Setup"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 5 service cards are displayed in a responsive grid.",
+        "Each card has an icon (SVG or icon font), title, and brief description.",
+        "Cards have a hover effect for interactivity."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create the Portfolio section with 3 sample project cards: 'Sample Gym Website', 'Sample Lawyer Website', and 'Sample Coaching Website'. Each card should show a placeholder thumbnail image, project title, and a short description. Include a note: 'Demo designs available on request.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Sample Gym Website",
+          "Sample Lawyer Website",
+          "Sample Coaching Website",
+          "Demo designs available on request."
+        ]
+      },
+      "acceptanceCriteria": [
+        "3 portfolio cards are displayed in a responsive grid.",
+        "Each card has a thumbnail, title, and short description.",
+        "The note 'Demo designs available on request.' is displayed below the cards.",
+        "Cards have a hover/overlay effect."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create the Pricing section with 3 tiers: Basic (₹2,500), Standard (₹3,500, labeled 'Most Popular'), and Premium (₹5,000). Each card should list relevant features appropriate to the tier. The Standard card should be visually highlighted as the recommended option. Each card should have a CTA button that links to the Contact/WhatsApp.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Basic – ₹2,500",
+          "Standard – ₹3,500 (Most Popular)",
+          "Premium – ₹5,000"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three pricing cards are displayed side by side (stacked on mobile).",
+        "Standard card is visually distinct with a 'Most Popular' badge.",
+        "Prices are shown in INR with ₹ symbol.",
+        "Each card lists features and has a CTA button.",
+        "CTA buttons open the WhatsApp link or scroll to Contact."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create the 'Why Choose Me' section displaying 5 benefit points: '48 Hour Delivery', 'Affordable Student Pricing', 'Modern Clean Design', 'Direct WhatsApp Support', and 'No Hidden Charges'. Use icons or checkmarks alongside each point.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "48 Hour Delivery",
+          "Affordable Student Pricing",
+          "Modern Clean Design",
+          "Direct WhatsApp Support",
+          "No Hidden Charges"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 5 benefit points are displayed with icons or checkmark indicators.",
+        "Layout is clean and scannable (grid or list).",
+        "Section has a visually distinct background to break up page flow."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Create the Contact section with a form containing fields: Name, Phone, Business Type, and Message, plus a submit button. Below the form, display contact details: Call: +918730818101, WhatsApp: +918730818101 (linking to https://wa.me/918730818101), Email: belipaul4567@gmail.com, Location: Assam, India. The form submission should be stored in the backend.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Name",
+          "Phone",
+          "Business Type",
+          "Message",
+          "Call: +918730818101",
+          "WhatsApp: +918730818101",
+          "Email: belipaul4567@gmail.com",
+          "Location: Assam, India"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form has Name, Phone, Business Type (text or dropdown), and Message fields with basic validation.",
+        "Form submission stores the inquiry in the backend canister.",
+        "Success message is shown after successful submission.",
+        "Contact details (phone, WhatsApp, email, location) are displayed below the form.",
+        "WhatsApp contact detail links to https://wa.me/918730818101.",
+        "Phone number is a clickable tel: link."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Add a sticky floating WhatsApp button fixed to the bottom-right corner of every page section. Clicking it opens https://wa.me/918730818101 in a new tab. The button should use the WhatsApp green color and a WhatsApp icon, with a subtle pulse or tooltip 'Chat with me'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Sticky WhatsApp button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button is fixed at the bottom-right corner and always visible while scrolling.",
+        "Clicking opens https://wa.me/918730818101 in a new tab.",
+        "Button uses WhatsApp green (#25D366) and a recognizable WhatsApp icon.",
+        "Button has a tooltip or label 'Chat with me'."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Add a footer with copyright text '© 2024 Debraj Paul. All rights reserved.' and quick links to all sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer is displayed at the bottom of the page.",
+        "Copyright text is present.",
+        "Quick-links allow smooth scroll navigation to all sections."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Implement a backend Motoko actor to store contact form submissions with fields: name, phone, businessType, message, and timestamp. Expose a public method to add a new inquiry and an admin query method to retrieve all inquiries.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Include contact form fields"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend actor stores inquiry records in stable storage.",
+        "submitInquiry() method accepts name, phone, businessType, and message and saves them with a timestamp.",
+        "getInquiries() query method returns all stored inquiries.",
+        "Motoko code compiles without errors."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Generate portfolio thumbnail images for the 3 sample projects — a gym website preview, a lawyer website preview, and a coaching center website preview — and a professional avatar/profile photo placeholder for the About section. Render all generated images from frontend/public/assets/generated.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Sample Gym Website",
+          "Sample Lawyer Website",
+          "Sample Coaching Website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three portfolio thumbnail images are displayed in the Portfolio section cards.",
+        "Profile photo placeholder is displayed in the About section.",
+        "Images are served from frontend/public/assets/generated.",
+        "Images are appropriately sized and do not degrade page load performance."
+      ]
+    }
+  ],
+  "constraints": [
+    "Dark blue (#0A1628 / #0D2149) and white color scheme must be used — no other primary color palette.",
+    "WhatsApp number +918730818101 and email belipaul4567@gmail.com must appear exactly as provided.",
+    "All prices must be displayed in Indian Rupees (₹).",
+    "Do not edit any files listed in frontend.immutablePaths.",
+    "All backend logic must reside in the single main Motoko actor."
+  ],
+  "nonGoals": [
+    "No real payment processing or e-commerce functionality.",
+    "No user authentication or login system.",
+    "No blog or CMS functionality.",
+    "No multi-language support.",
+    "No analytics dashboard for the site owner.",
+    "No automated email sending on form submission."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Modern gym website browser mockup screenshot with dark background, bold typography, and energetic orange accents (portfolio-gym.dim_600x400.png)",
+      "Professional lawyer/legal services website browser mockup screenshot with dark navy and gold accents, formal serif typography (portfolio-lawyer.dim_600x400.png)",
+      "Bright coaching center website browser mockup screenshot with motivational headline, blue and white palette, student imagery (portfolio-coaching.dim_600x400.png)",
+      "Friendly professional young male developer avatar illustration with dark blue background, suitable as a profile photo placeholder (avatar-debraj.dim_400x400.png)"
+    ],
+    "edits": []
+  }
+}

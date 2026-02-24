@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Personal portfolio website for Debraj Paul, a student web developer from Assam, India. Dark blue and white theme, high-converting design targeting local businesses (lawyers, gyms, coaching centers, clinics). 7 sections: Hero, About, Services, Portfolio, Pricing, Why Choose Me, and Contact. Primary goal is generating client inquiries via WhatsApp (+918730818101) and Call. Pricing in INR (₹2,500 / ₹3,500 / ₹5,000). Includes sticky WhatsApp button, urgency messaging, and contact form.",
+  "architectural_notes": [
+    "Dark blue and white color theme throughout",
+    "Mobile-optimized responsive layout",
+    "WhatsApp CTA: +918730818101, Email: belipaul4567@gmail.com",
+    "Tone: Professional, confident, trustworthy"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Modern gym website browser mockup screenshot with dark background, bold typography, and energetic orange accents (portfolio-gym.dim_600x400.png)\n- Professional lawyer/legal services website browser mockup screenshot with dark navy and gold accents, formal serif typography (portfolio-lawyer.dim_600x400.png)\n- Bright coaching center website browser mockup screenshot with motivational headline, blue and white palette, student imagery (portfolio-coaching.dim_600x400.png)\n- Friendly professional young male developer avatar illustration with dark blue background, suitable as a profile photo placeholder (avatar-debraj.dim_400x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-full-single-page-personal-portfolio-website-for-debraj-paul-with-a-dark-blue-0a1628-0d2149-and-white-color-scheme-clean-modern-typography-fully-mobile-responsive-layout-and-a-professional-confident-trustworthy-tone-throughout",
+      "title": "Build a full single-page personal portfolio website for Debraj Paul with a dark blue (#0A1628 / #0D2149) and white color scheme, clean modern typography, fully mobile-responsive layout, and a professional, confident, trustworthy tone throughout.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-top-navigation-bar-with-debraj-paul-s-name-logo-on-the-left-and-anchor-links-to-all-7-sections-on-the-right-on-mobile-collapse-navigation-into-a-hamburger-menu",
+      "title": "Implement a sticky top navigation bar with Debraj Paul's name/logo on the left and anchor links to all 7 sections on the right. On mobile, collapse navigation into a hamburger menu.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-hero-section-with-headline-professional-business-websites-in-48-hours-subheadline-i-help-local-businesses-get-more-clients-with-modern-mobile-optimized-websites-two-cta-buttons-get-free-demo-linking-to-contact-section-and-chat-on-whatsapp-opening-https-wa-me-918730818101-and-an-urgency-line-limited-projects-taken-each-month-styled-with-a-badge-or-highlight",
+      "title": "Create the Hero section with: headline 'Professional Business Websites in 48 Hours', subheadline 'I help local businesses get more clients with modern, mobile-optimized websites.', two CTA buttons ('Get Free Demo' linking to Contact section and 'Chat on WhatsApp' opening https://wa.me/918730818101), and an urgency line 'Limited Projects Taken Each Month' styled with a badge or highlight.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-about-me-section-with-the-bio-i-m-debraj-paul-a-student-web-developer-based-in-assam-i-help-lawyers-gyms-coaching-centers-and-small-businesses-build-affordable-professional-websites-that-generate-real-client-inquiries-include-a-profile-photo-placeholder-and-a-request-free-demo-cta-button-that-scrolls-to-the-contact-section",
+      "title": "Create the About Me section with the bio: 'I'm Debraj Paul, a student web developer based in Assam. I help lawyers, gyms, coaching centers and small businesses build affordable, professional websites that generate real client inquiries.' Include a profile photo placeholder and a 'Request Free Demo' CTA button that scrolls to the Contact section.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-services-section-displaying-5-icon-cards-business-website-design-landing-pages-website-redesign-whatsapp-call-integration-and-basic-seo-setup-each-card-should-have-a-relevant-icon-title-and-a-short-one-line-description",
+      "title": "Create the Services section displaying 5 icon cards: 'Business Website Design', 'Landing Pages', 'Website Redesign', 'WhatsApp & Call Integration', and 'Basic SEO Setup'. Each card should have a relevant icon, title, and a short one-line description.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-portfolio-section-with-3-sample-project-cards-sample-gym-website-sample-lawyer-website-and-sample-coaching-website-each-card-should-show-a-placeholder-thumbnail-image-project-title-and-a-short-description-include-a-note-demo-designs-available-on-request",
+      "title": "Create the Portfolio section with 3 sample project cards: 'Sample Gym Website', 'Sample Lawyer Website', and 'Sample Coaching Website'. Each card should show a placeholder thumbnail image, project title, and a short description. Include a note: 'Demo designs available on request.'",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-pricing-section-with-3-tiers-basic-2-500-standard-3-500-labeled-most-popular-and-premium-5-000-each-card-should-list-relevant-features-appropriate-to-the-tier-the-standard-card-should-be-visually-highlighted-as-the-recommended-option-each-card-should-have-a-cta-button-that-links-to-the-contact-whatsapp",
+      "title": "Create the Pricing section with 3 tiers: Basic (₹2,500), Standard (₹3,500, labeled 'Most Popular'), and Premium (₹5,000). Each card should list relevant features appropriate to the tier. The Standard card should be visually highlighted as the recommended option. Each card should have a CTA button that links to the Contact/WhatsApp.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-why-choose-me-section-displaying-5-benefit-points-48-hour-delivery-affordable-student-pricing-modern-clean-design-direct-whatsapp-support-and-no-hidden-charges-use-icons-or-checkmarks-alongside-each-point",
+      "title": "Create the 'Why Choose Me' section displaying 5 benefit points: '48 Hour Delivery', 'Affordable Student Pricing', 'Modern Clean Design', 'Direct WhatsApp Support', and 'No Hidden Charges'. Use icons or checkmarks alongside each point.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-contact-section-with-a-form-containing-fields-name-phone-business-type-and-message-plus-a-submit-button-below-the-form-display-contact-details-call-918730818101-whatsapp-918730818101-linking-to-https-wa-me-918730818101-email-belipaul4567-gmail-com-location-assam-india-the-form-submission-should-be-stored-in-the-backend",
+      "title": "Create the Contact section with a form containing fields: Name, Phone, Business Type, and Message, plus a submit button. Below the form, display contact details: Call: +918730818101, WhatsApp: +918730818101 (linking to https://wa.me/918730818101), Email: belipaul4567@gmail.com, Location: Assam, India. The form submission should be stored in the backend.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-sticky-floating-whatsapp-button-fixed-to-the-bottom-right-corner-of-every-page-section-clicking-it-opens-https-wa-me-918730818101-in-a-new-tab-the-button-should-use-the-whatsapp-green-color-and-a-whatsapp-icon-with-a-subtle-pulse-or-tooltip-chat-with-me",
+      "title": "Add a sticky floating WhatsApp button fixed to the bottom-right corner of every page section. Clicking it opens https://wa.me/918730818101 in a new tab. The button should use the WhatsApp green color and a WhatsApp icon, with a subtle pulse or tooltip 'Chat with me'.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-footer-with-copyright-text-2024-debraj-paul-all-rights-reserved-and-quick-links-to-all-sections",
+      "title": "Add a footer with copyright text '© 2024 Debraj Paul. All rights reserved.' and quick links to all sections.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-portfolio-thumbnail-images-for-the-3-sample-projects-a-gym-website-preview-a-lawyer-website-preview-and-a-coaching-center-website-preview-and-a-professional-avatar-profile-photo-placeholder-for-the-about-section-render-all-generated-images-from-frontend-public-assets-generated",
+      "title": "Generate portfolio thumbnail images for the 3 sample projects — a gym website preview, a lawyer website preview, and a coaching center website preview — and a professional avatar/profile photo placeholder for the About section. Render all generated images from frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with headline, subheadline, CTA buttons, and urgency line",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "About Me section with bio and Free Demo CTA",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Services section with 5 icon cards",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Portfolio section with 3 sample demo projects",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Pricing section with 3 tiers in INR",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Why Choose Me section with 5 bullet points",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Contact section with form and contact details",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Sticky WhatsApp button across the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Implement a backend Motoko actor to store contact form submissions with fields: name, phone, businessType, message, and timestamp. Expose a public method to add a new inquiry and an admin query method to retrieve all inquiries.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Debraj Paul Portfolio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

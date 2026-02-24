@@ -1,0 +1,291 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-24T19:53:29.349Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 13,
+    "implemented": 12,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Build a full single-page personal portfolio website for Debraj Paul with a dark blue (#0A1628 / #0D2149) and white color scheme, clean modern typography, fully mobile-responsive layout, and a professional, confident, trustworthy tone throughout.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/tailwind.config.js",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/tailwind.config.js",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Add a sticky floating WhatsApp button fixed to the bottom-right corner of every page section. Clicking it opens https://wa.me/918730818101 in a new tab. The button should use the WhatsApp green color and a WhatsApp icon, with a subtle pulse or tooltip 'Chat with me'.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/WhatsAppButton.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/WhatsAppButton.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Add a footer with copyright text '© 2024 Debraj Paul. All rights reserved.' and quick links to all sections.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Implement a backend Motoko actor to store contact form submissions with fields: name, phone, businessType, message, and timestamp. Expose a public method to add a new inquiry and an admin query method to retrieve all inquiries.",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Generate portfolio thumbnail images for the 3 sample projects — a gym website preview, a lawyer website preview, and a coaching center website preview — and a professional avatar/profile photo placeholder for the About section. Render all generated images from frontend/public/assets/generated.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/PortfolioSection.tsx",
+          "frontend/src/components/AboutSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/PortfolioSection.tsx",
+          "frontend/src/components/AboutSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Implement a sticky top navigation bar with Debraj Paul's name/logo on the left and anchor links to all 7 sections on the right. On mobile, collapse navigation into a hamburger menu.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Create the Hero section with: headline 'Professional Business Websites in 48 Hours', subheadline 'I help local businesses get more clients with modern, mobile-optimized websites.', two CTA buttons ('Get Free Demo' linking to Contact section and 'Chat on WhatsApp' opening https://wa.me/918730818101), and an urgency line 'Limited Projects Taken Each Month' styled with a badge or highlight.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create the About Me section with the bio: 'I'm Debraj Paul, a student web developer based in Assam. I help lawyers, gyms, coaching centers and small businesses build affordable, professional websites that generate real client inquiries.' Include a profile photo placeholder and a 'Request Free Demo' CTA button that scrolls to the Contact section.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/AboutSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/AboutSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Create the Services section displaying 5 icon cards: 'Business Website Design', 'Landing Pages', 'Website Redesign', 'WhatsApp & Call Integration', and 'Basic SEO Setup'. Each card should have a relevant icon, title, and a short one-line description.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ServicesSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ServicesSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Create the Portfolio section with 3 sample project cards: 'Sample Gym Website', 'Sample Lawyer Website', and 'Sample Coaching Website'. Each card should show a placeholder thumbnail image, project title, and a short description. Include a note: 'Demo designs available on request.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/PortfolioSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/PortfolioSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Create the Pricing section with 3 tiers: Basic (₹2,500), Standard (₹3,500, labeled 'Most Popular'), and Premium (₹5,000). Each card should list relevant features appropriate to the tier. The Standard card should be visually highlighted as the recommended option. Each card should have a CTA button that links to the Contact/WhatsApp.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/PricingSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/PricingSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Create the 'Why Choose Me' section displaying 5 benefit points: '48 Hour Delivery', 'Affordable Student Pricing', 'Modern Clean Design', 'Direct WhatsApp Support', and 'No Hidden Charges'. Use icons or checkmarks alongside each point.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/WhyChooseMeSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/WhyChooseMeSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Create the Contact section with a form containing fields: Name, Phone, Business Type, and Message, plus a submit button. Below the form, display contact details: Call: +918730818101, WhatsApp: +918730818101 (linking to https://wa.me/918730818101), Email: belipaul4567@gmail.com, Location: Assam, India. The form submission should be stored in the backend.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ContactSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ContactSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/avatar-debraj.dim_400x400.png",
+    "frontend/public/assets/generated/portfolio-coaching.dim_600x400.png",
+    "frontend/public/assets/generated/portfolio-gym.dim_600x400.png",
+    "frontend/public/assets/generated/portfolio-lawyer.dim_600x400.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/AboutSection.tsx",
+    "frontend/src/components/ContactSection.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/PortfolioSection.tsx",
+    "frontend/src/components/PricingSection.tsx",
+    "frontend/src/components/ServicesSection.tsx",
+    "frontend/src/components/WhatsAppButton.tsx",
+    "frontend/src/components/WhyChooseMeSection.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

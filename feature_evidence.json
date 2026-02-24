@@ -1,0 +1,233 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-build-a-full-single-page-personal-portfolio-website-for-debraj-paul-with-a-dark-blue-0a1628-0d2149-and-white-color-scheme-clean-modern-typography-fully-mobile-responsive-layout-and-a-professional-confident-trustworthy-tone-throughout",
+      "featureTitle": "Build a full single-page personal portfolio website for Debraj Paul with a dark blue (#0A1628 / #0D2149) and white color scheme, clean modern typography, fully mobile-responsive layout, and a professional, confident, trustworthy tone throughout.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-sticky-top-navigation-bar-with-debraj-paul-s-name-logo-on-the-left-and-anchor-links-to-all-7-sections-on-the-right-on-mobile-collapse-navigation-into-a-hamburger-menu",
+      "featureTitle": "Implement a sticky top navigation bar with Debraj Paul's name/logo on the left and anchor links to all 7 sections on the right. On mobile, collapse navigation into a hamburger menu.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-hero-section-with-headline-professional-business-websites-in-48-hours-subheadline-i-help-local-businesses-get-more-clients-with-modern-mobile-optimized-websites-two-cta-buttons-get-free-demo-linking-to-contact-section-and-chat-on-whatsapp-opening-https-wa-me-918730818101-and-an-urgency-line-limited-projects-taken-each-month-styled-with-a-badge-or-highlight",
+      "featureTitle": "Create the Hero section with: headline 'Professional Business Websites in 48 Hours', subheadline 'I help local businesses get more clients with modern, mobile-optimized websites.', two CTA buttons ('Get Free Demo' linking to Contact section and 'Chat on WhatsApp' opening https://wa.me/918730818101), and an urgency line 'Limited Projects Taken Each Month' styled with a badge or highlight.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-about-me-section-with-the-bio-i-m-debraj-paul-a-student-web-developer-based-in-assam-i-help-lawyers-gyms-coaching-centers-and-small-businesses-build-affordable-professional-websites-that-generate-real-client-inquiries-include-a-profile-photo-placeholder-and-a-request-free-demo-cta-button-that-scrolls-to-the-contact-section",
+      "featureTitle": "Create the About Me section with the bio: 'I'm Debraj Paul, a student web developer based in Assam. I help lawyers, gyms, coaching centers and small businesses build affordable, professional websites that generate real client inquiries.' Include a profile photo placeholder and a 'Request Free Demo' CTA button that scrolls to the Contact section.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AboutSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-services-section-displaying-5-icon-cards-business-website-design-landing-pages-website-redesign-whatsapp-call-integration-and-basic-seo-setup-each-card-should-have-a-relevant-icon-title-and-a-short-one-line-description",
+      "featureTitle": "Create the Services section displaying 5 icon cards: 'Business Website Design', 'Landing Pages', 'Website Redesign', 'WhatsApp & Call Integration', and 'Basic SEO Setup'. Each card should have a relevant icon, title, and a short one-line description.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ServicesSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-portfolio-section-with-3-sample-project-cards-sample-gym-website-sample-lawyer-website-and-sample-coaching-website-each-card-should-show-a-placeholder-thumbnail-image-project-title-and-a-short-description-include-a-note-demo-designs-available-on-request",
+      "featureTitle": "Create the Portfolio section with 3 sample project cards: 'Sample Gym Website', 'Sample Lawyer Website', and 'Sample Coaching Website'. Each card should show a placeholder thumbnail image, project title, and a short description. Include a note: 'Demo designs available on request.'",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/PortfolioSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-pricing-section-with-3-tiers-basic-2-500-standard-3-500-labeled-most-popular-and-premium-5-000-each-card-should-list-relevant-features-appropriate-to-the-tier-the-standard-card-should-be-visually-highlighted-as-the-recommended-option-each-card-should-have-a-cta-button-that-links-to-the-contact-whatsapp",
+      "featureTitle": "Create the Pricing section with 3 tiers: Basic (₹2,500), Standard (₹3,500, labeled 'Most Popular'), and Premium (₹5,000). Each card should list relevant features appropriate to the tier. The Standard card should be visually highlighted as the recommended option. Each card should have a CTA button that links to the Contact/WhatsApp.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/PricingSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-why-choose-me-section-displaying-5-benefit-points-48-hour-delivery-affordable-student-pricing-modern-clean-design-direct-whatsapp-support-and-no-hidden-charges-use-icons-or-checkmarks-alongside-each-point",
+      "featureTitle": "Create the 'Why Choose Me' section displaying 5 benefit points: '48 Hour Delivery', 'Affordable Student Pricing', 'Modern Clean Design', 'Direct WhatsApp Support', and 'No Hidden Charges'. Use icons or checkmarks alongside each point.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/WhyChooseMeSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-contact-section-with-a-form-containing-fields-name-phone-business-type-and-message-plus-a-submit-button-below-the-form-display-contact-details-call-918730818101-whatsapp-918730818101-linking-to-https-wa-me-918730818101-email-belipaul4567-gmail-com-location-assam-india-the-form-submission-should-be-stored-in-the-backend",
+      "featureTitle": "Create the Contact section with a form containing fields: Name, Phone, Business Type, and Message, plus a submit button. Below the form, display contact details: Call: +918730818101, WhatsApp: +918730818101 (linking to https://wa.me/918730818101), Email: belipaul4567@gmail.com, Location: Assam, India. The form submission should be stored in the backend.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ContactSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-sticky-floating-whatsapp-button-fixed-to-the-bottom-right-corner-of-every-page-section-clicking-it-opens-https-wa-me-918730818101-in-a-new-tab-the-button-should-use-the-whatsapp-green-color-and-a-whatsapp-icon-with-a-subtle-pulse-or-tooltip-chat-with-me",
+      "featureTitle": "Add a sticky floating WhatsApp button fixed to the bottom-right corner of every page section. Clicking it opens https://wa.me/918730818101 in a new tab. The button should use the WhatsApp green color and a WhatsApp icon, with a subtle pulse or tooltip 'Chat with me'.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/WhatsAppButton.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-footer-with-copyright-text-2024-debraj-paul-all-rights-reserved-and-quick-links-to-all-sections",
+      "featureTitle": "Add a footer with copyright text '© 2024 Debraj Paul. All rights reserved.' and quick links to all sections.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-generate-portfolio-thumbnail-images-for-the-3-sample-projects-a-gym-website-preview-a-lawyer-website-preview-and-a-coaching-center-website-preview-and-a-professional-avatar-profile-photo-placeholder-for-the-about-section-render-all-generated-images-from-frontend-public-assets-generated",
+      "featureTitle": "Generate portfolio thumbnail images for the 3 sample projects — a gym website preview, a lawyer website preview, and a coaching center website preview — and a professional avatar/profile photo placeholder for the About section. Render all generated images from frontend/public/assets/generated.",
+      "files": [
+        "frontend/src/components/AboutSection.tsx",
+        "frontend/src/components/PortfolioSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
