@@ -1,22 +1,73 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace About section profile photo with uploaded real portrait",
+  "title": "Rebuild Admin Inbox Page with Proper Contact Form Submissions Display",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Replace the current profile photo in AboutSection.tsx with the uploaded portrait image (debraj-profile.dim_400x480.jpg) while preserving all existing styling",
+      "summary": "Update the hardcoded admin password in the useAdminAuth hook to 'debrajhero' with case-sensitive matching",
       "acceptanceCriteria": [
-        "The About section profile photo displays the exact uploaded portrait of Debraj Paul (young man with glasses, teal background, white t-shirt).",
-        "The image is served from frontend/public/assets/generated/debraj-profile.dim_400x480.jpg.",
-        "The photo container retains its original shape, border, and shadow styling.",
-        "No AI-generated or placeholder portrait is used."
+        "Entering 'debrajhero' grants access to the admin inbox",
+        "Entering any other string (including 'Debrajhero' or 'DEBRAJHERO') is rejected",
+        "Authenticated state is persisted in sessionStorage so page refresh does not log the admin out"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/AboutSection.tsx",
+          "path": "frontend/src/hooks/useAdminAuth.ts",
           "operation": "modify",
-          "description": "Update the profile photo img element to use the uploaded portrait at frontend/public/assets/generated/debraj-profile.dim_400x480.jpg as the src attribute. Locate the img element within the photo container div (the second child div of the main flex container) and replace its src value with '/assets/generated/debraj-profile.dim_400x480.jpg'. Preserve all existing className, alt text, width, height, and other attributes to maintain the rounded corners, border, shadow, and responsive styling."
+          "description": "Update the ADMIN_PASSWORD constant to exactly 'debrajhero' and ensure the password comparison in the login function is case-sensitive. Verify sessionStorage persistence is working correctly to maintain authenticated state across page refreshes."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Rebuild the AdminPage component to be fully protected by AdminPasswordGate and render AdminInbox after authentication",
+      "acceptanceCriteria": [
+        "Navigating to /admin shows a password prompt before any inbox content is visible",
+        "After entering 'debrajhero', the admin inbox is rendered",
+        "The inbox displays all submitted contact form entries (name, phone, business type, message, timestamp)",
+        "A logout button in the header clears the session and returns to the password prompt",
+        "Loading, error, and empty states are handled gracefully with clear UI feedback"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AdminPage.tsx",
+          "operation": "modify",
+          "description": "Ensure AdminPasswordGate wraps the entire AdminInbox component so no inbox content is visible until authentication succeeds. Verify the logout button in the sticky header properly calls the logout function from useAdminAuth and clears the session, returning the user to the password prompt."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Rebuild the AdminInbox component to reliably fetch and display all contact form submissions without Internet Identity auth checks",
+      "acceptanceCriteria": [
+        "getAllInquiries is called on mount and results are displayed without requiring Internet Identity login",
+        "Each submission card/row shows: submitter name, phone number, business type, message, and submission date/time",
+        "A refresh button allows the admin to reload submissions without navigating away",
+        "Empty state shows a clear message when no submissions exist",
+        "Error state shows a descriptive error message if the backend call fails"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AdminInbox.tsx",
+          "operation": "modify",
+          "description": "Remove any Internet Identity authentication checks that block the inbox from loading. Ensure the useGetAllInquiries hook is called unconditionally on mount to fetch all submissions from the backend. Display each inquiry with all fields (name, phone, businessType, message, timestamp) in a structured card or table layout. Add a manual refresh button that re-fetches data using the queryClient.invalidateQueries pattern. Implement clear loading spinner, error message, and empty state ('No submissions yet') UI feedback."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Wire the /admin route into the React Router in App.tsx so AdminPage is accessible via direct URL navigation",
+      "acceptanceCriteria": [
+        "Visiting <app-url>/admin in the browser loads the AdminPage with the password gate",
+        "The /admin route does not appear in the main public navigation",
+        "All other existing page sections (Hero, About, Services, Portfolio, Pricing, Contact, Footer) continue to render correctly on the root / route"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import React Router (BrowserRouter, Routes, Route) and wrap the application. Define two routes: the root '/' route rendering all existing public sections (Navigation, Hero, About, Services, Portfolio, Pricing, WhyChooseMe, Contact, Footer, WhatsApp button) in order, and a '/admin' route rendering the AdminPage component. Ensure Navigation is included on both routes or placed outside Routes if it should appear globally. Do not add /admin to the public navigation links."
         }
       ]
     }

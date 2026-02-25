@@ -14,7 +14,15 @@ export interface Inquiry {
     timestamp: bigint;
     phone: string;
 }
+export enum UserRole {
+    admin = "admin",
+    user = "user",
+    guest = "guest"
+}
 export interface backendInterface {
+    assignCallerUserRole(user: Principal, role: UserRole): Promise<void>;
     getAllInquiries(): Promise<Array<Inquiry>>;
+    getCallerUserRole(): Promise<UserRole>;
+    isCallerAdmin(): Promise<boolean>;
     submitInquiry(name: string, phone: string, businessType: string, message: string): Promise<void>;
 }

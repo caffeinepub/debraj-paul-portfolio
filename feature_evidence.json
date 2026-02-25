@@ -2,20 +2,78 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-the-about-section-aboutsection-tsx-replace-the-current-profile-photo-with-the-uploaded-image-my-portfolio-image-1-jpg-saved-as-frontend-public-assets-generated-debraj-profile-jpg-the-image-must-be-rendered-inside-the-element-at-xpath-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-1-div-1-div-1-div-1-div-2-the-photo-container-div-use-the-generated-asset-path-as-the-img-src-preserve-all-existing-styling-rounded-corners-border-shadow-etc",
-      "featureTitle": "In the About section (AboutSection.tsx), replace the current profile photo with the uploaded image 'my portfolio image-1.jpg', saved as 'frontend/public/assets/generated/debraj-profile.jpg'. The image must be rendered inside the element at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2] (the photo container div). Use the generated asset path as the <img> src. Preserve all existing styling (rounded corners, border, shadow, etc.).",
+      "featureId": "feature-update-the-hardcoded-admin-password-in-the-useadminauth-hook-to-debrajhero-the-password-check-must-be-case-sensitive-and-exactly-match-debrajhero",
+      "featureTitle": "Update the hardcoded admin password in the useAdminAuth hook to 'debrajhero'. The password check must be case-sensitive and exactly match 'debrajhero'.",
       "files": [
-        "frontend/src/components/AboutSection.tsx"
+        "frontend/src/hooks/useAdminAuth.ts"
       ],
       "components": [
         "core-infrastructure@1.0.2",
         "shadcn-ui@1.0.0",
         "build-template-react@1.0.0",
         "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
       ],
       "testIds": [
         "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-rebuild-the-adminpage-component-frontend-src-pages-adminpage-tsx-so-it-is-accessible-at-the-admin-route-and-is-fully-protected-by-the-adminpasswordgate-when-the-correct-password-is-entered-it-must-render-the-admininbox-component-which-fetches-and-displays-all-contact-form-submissions-from-the-backend",
+      "featureTitle": "Rebuild the AdminPage component (frontend/src/pages/AdminPage.tsx) so it is accessible at the /admin route and is fully protected by the AdminPasswordGate. When the correct password is entered, it must render the AdminInbox component which fetches and displays all contact form submissions from the backend.",
+      "files": [
+        "frontend/src/pages/AdminPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-rebuild-the-admininbox-component-frontend-src-components-admininbox-tsx-to-reliably-call-the-getallinquiries-backend-endpoint-and-render-every-submission-in-a-structured-readable-list-or-table-remove-any-internet-identity-auth-check-that-blocks-the-admin-inbox-from-loading-access-is-already-gated-by-the-password-in-adminpasswordgate",
+      "featureTitle": "Rebuild the AdminInbox component (frontend/src/components/AdminInbox.tsx) to reliably call the getAllInquiries backend endpoint and render every submission in a structured, readable list or table. Remove any Internet Identity auth check that blocks the admin inbox from loading — access is already gated by the password in AdminPasswordGate.",
+      "files": [
+        "frontend/src/components/AdminInbox.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-react-router-or-equivalent-routing-in-app-tsx-includes-a-dedicated-admin-route-that-renders-the-adminpage-component-so-users-can-navigate-directly-to-the-admin-inbox-by-visiting-admin-in-the-browser",
+      "featureTitle": "Ensure the React Router (or equivalent routing) in App.tsx includes a dedicated /admin route that renders the AdminPage component, so users can navigate directly to the admin inbox by visiting /admin in the browser.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
       ],
       "confidence": "high"
     }

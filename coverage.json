@@ -1,35 +1,78 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-25T15:26:53.228Z",
+  "generatedAt": "2026-02-25T18:48:13.272Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 5,
+    "implemented": 4,
     "items": [
       {
         "id": "REQ-1",
-        "summary": "In the About section (AboutSection.tsx), replace the current profile photo with the uploaded image 'my portfolio image-1.jpg', saved as 'frontend/public/assets/generated/debraj-profile.jpg'. The image must be rendered inside the element at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2] (the photo container div). Use the generated asset path as the <img> src. Preserve all existing styling (rounded corners, border, shadow, etc.).",
+        "summary": "Update the hardcoded admin password in the useAdminAuth hook to 'debrajhero'. The password check must be case-sensitive and exactly match 'debrajhero'.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/AboutSection.tsx"
+          "frontend/src/hooks/useAdminAuth.ts"
         ],
         "matchedFiles": [
-          "frontend/src/components/AboutSection.tsx"
+          "frontend/src/hooks/useAdminAuth.ts"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Rebuild the AdminPage component (frontend/src/pages/AdminPage.tsx) so it is accessible at the /admin route and is fully protected by the AdminPasswordGate. When the correct password is entered, it must render the AdminInbox component which fetches and displays all contact form submissions from the backend.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/AdminPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/AdminPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Rebuild the AdminInbox component (frontend/src/components/AdminInbox.tsx) to reliably call the getAllInquiries backend endpoint and render every submission in a structured, readable list or table. Remove any Internet Identity auth check that blocks the admin inbox from loading — access is already gated by the password in AdminPasswordGate.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/AdminInbox.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/AdminInbox.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Ensure the backend getAllInquiries function in backend/main.mo returns all stored contact form inquiries without any Internet Identity or principal-based access restriction, since admin access is fully gated on the frontend by the password.",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Ensure the React Router (or equivalent routing) in App.tsx includes a dedicated /admin route that renders the AdminPage component, so users can navigate directly to the admin inbox by visiting /admin in the browser.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
         ]
       }
     ]
   },
   "changedFiles": [
+    "backend/main.mo",
     "build-request.json",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/debraj-profile.dim_400x480.jpg",
-    "frontend/src/components/AboutSection.tsx",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AdminInbox.tsx",
+    "frontend/src/hooks/useAdminAuth.ts",
+    "frontend/src/pages/AdminPage.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

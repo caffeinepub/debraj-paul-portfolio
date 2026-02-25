@@ -1,23 +1,65 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "New project",
-  "architectural_notes": [],
-  "known_issues": [],
-  "isFixRequest": false,
-  "imageRequirements": "## Edit Images\n- Use the uploaded photo exactly as-is, resized to portrait dimensions (my portfolio image-1.jpg > debraj-profile.dim_400x480.jpg)",
+  "summary": "App with a working admin page that displays all contact form submissions, protected by the password 'debrajhero'.",
+  "architectural_notes": [
+    "Admin inbox page is password-protected with password 'debrajhero' and displays all contact form submissions."
+  ],
+  "known_issues": [
+    "Admin inbox feature was not properly implemented in previous build — requires rebuild."
+  ],
+  "isFixRequest": true,
   "existing_features": [
     {
-      "id": "feature-in-the-about-section-aboutsection-tsx-replace-the-current-profile-photo-with-the-uploaded-image-my-portfolio-image-1-jpg-saved-as-frontend-public-assets-generated-debraj-profile-jpg-the-image-must-be-rendered-inside-the-element-at-xpath-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-1-div-1-div-1-div-1-div-2-the-photo-container-div-use-the-generated-asset-path-as-the-img-src-preserve-all-existing-styling-rounded-corners-border-shadow-etc",
-      "title": "In the About section (AboutSection.tsx), replace the current profile photo with the uploaded image 'my portfolio image-1.jpg', saved as 'frontend/public/assets/generated/debraj-profile.jpg'. The image must be rendered inside the element at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2] (the photo container div). Use the generated asset path as the <img> src. Preserve all existing styling (rounded corners, border, shadow, etc.).",
+      "id": "feature-update-the-hardcoded-admin-password-in-the-useadminauth-hook-to-debrajhero-the-password-check-must-be-case-sensitive-and-exactly-match-debrajhero",
+      "title": "Update the hardcoded admin password in the useAdminAuth hook to 'debrajhero'. The password check must be case-sensitive and exactly match 'debrajhero'.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-adminpage-component-frontend-src-pages-adminpage-tsx-so-it-is-accessible-at-the-admin-route-and-is-fully-protected-by-the-adminpasswordgate-when-the-correct-password-is-entered-it-must-render-the-admininbox-component-which-fetches-and-displays-all-contact-form-submissions-from-the-backend",
+      "title": "Rebuild the AdminPage component (frontend/src/pages/AdminPage.tsx) so it is accessible at the /admin route and is fully protected by the AdminPasswordGate. When the correct password is entered, it must render the AdminInbox component which fetches and displays all contact form submissions from the backend.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-admininbox-component-frontend-src-components-admininbox-tsx-to-reliably-call-the-getallinquiries-backend-endpoint-and-render-every-submission-in-a-structured-readable-list-or-table-remove-any-internet-identity-auth-check-that-blocks-the-admin-inbox-from-loading-access-is-already-gated-by-the-password-in-adminpasswordgate",
+      "title": "Rebuild the AdminInbox component (frontend/src/components/AdminInbox.tsx) to reliably call the getAllInquiries backend endpoint and render every submission in a structured, readable list or table. Remove any Internet Identity auth check that blocks the admin inbox from loading — access is already gated by the password in AdminPasswordGate.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-react-router-or-equivalent-routing-in-app-tsx-includes-a-dedicated-admin-route-that-renders-the-adminpage-component-so-users-can-navigate-directly-to-the-admin-inbox-by-visiting-admin-in-the-browser",
+      "title": "Ensure the React Router (or equivalent routing) in App.tsx includes a dedicated /admin route that renders the AdminPage component, so users can navigate directly to the admin inbox by visiting /admin in the browser.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
     }
   ],
-  "new_feature_requests": [],
-  "projectName": "Replace About section profile photo with uploaded real portrait",
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Rebuild admin inbox page to properly show all contact form submissions, protected by password 'debrajhero'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Ensure the backend getAllInquiries function in backend/main.mo returns all stored contact form inquiries without any Internet Identity or principal-based access restriction, since admin access is fully gated on the frontend by the password.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Debraj Portfolio",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

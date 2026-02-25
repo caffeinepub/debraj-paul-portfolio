@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X, Code2, LogIn, LogOut } from 'lucide-react';
+import { useInternetIdentity } from '../hooks/useInternetIdentity';
+import { useQueryClient } from '@tanstack/react-query';
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
@@ -14,6 +16,11 @@ const navLinks = [
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { login, clear, loginStatus, identity } = useInternetIdentity();
+  const queryClient = useQueryClient();
+
+  const isAuthenticated = !!identity;
+  const isLoggingIn = loginStatus === 'logging-in';
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -26,6 +33,22 @@ export default function Navigation() {
     const el = document.querySelector(href);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleAuth = async () => {
+    if (isAuthenticated) {
+      await clear();
+      queryClient.clear();
+    } else {
+      try {
+        await login();
+      } catch (error: any) {
+        if (error.message === 'User is already authenticated') {
+          await clear();
+          setTimeout(() => login(), 300);
+        }
+      }
     }
   };
 
@@ -69,6 +92,29 @@ export default function Navigation() {
             >
               Get Free Demo
             </button>
+
+            {/* Internet Identity login/logout — kept for admin backend auth */}
+            <button
+              onClick={handleAuth}
+              disabled={isLoggingIn}
+              className={`ml-2 flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 disabled:opacity-50 ${
+                isAuthenticated
+                  ? 'text-muted-foreground hover:text-foreground hover:bg-muted/50 border border-border'
+                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+              }`}
+              title={isAuthenticated ? 'Logout' : 'Admin Login'}
+            >
+              {isLoggingIn ? (
+                <span className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+              ) : isAuthenticated ? (
+                <LogOut className="w-4 h-4" />
+              ) : (
+                <LogIn className="w-4 h-4" />
+              )}
+              <span className="hidden lg:inline">
+                {isLoggingIn ? 'Logging in…' : isAuthenticated ? 'Logout' : 'Admin'}
+              </span>
+            </button>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -100,6 +146,21 @@ export default function Navigation() {
               className="mt-2 w-full px-4 py-3 text-sm font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
             >
               Get Free Demo
+            </button>
+
+            <button
+              onClick={() => { setIsOpen(false); handleAuth(); }}
+              disabled={isLoggingIn}
+              className="w-full flex items-center gap-2 px-4 py-3 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-colors disabled:opacity-50"
+            >
+              {isLoggingIn ? (
+                <span className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+              ) : isAuthenticated ? (
+                <LogOut className="w-4 h-4" />
+              ) : (
+                <LogIn className="w-4 h-4" />
+              )}
+              {isLoggingIn ? 'Logging in…' : isAuthenticated ? 'Logout' : 'Admin Login'}
             </button>
           </nav>
         </div>

@@ -1,9 +1,9 @@
 {
   "frontend/src/index.css": "Global styles with dark navy OKLCH color system, Google Fonts import (Inter + Poppins), custom utility classes for hero gradient, card glow effects, WhatsApp pulse animation, and nav blur.",
   "frontend/tailwind.config.js": "Extended Tailwind config with Inter/Poppins font families, custom navy/sky/gold/whatsapp brand colors, glow box shadows, and fade-up/float keyframe animations.",
-  "frontend/src/hooks/useQueries.ts": "React Query mutation hook for submitting contact form inquiries to the backend canister via submitInquiry().",
-  "frontend/src/App.tsx": "Root app component that composes all 7 page sections (Hero, About, Services, Portfolio, Pricing, WhyChooseMe, Contact) plus Navigation, Footer, and sticky WhatsApp button.",
-  "frontend/src/components/Navigation.tsx": "Sticky top navigation bar with Debraj Paul branding, smooth-scroll anchor links to all sections, and a mobile hamburger menu toggle.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend canister interactions — includes `useSubmitInquiry` mutation for contact form submissions and `useGetInquiries` query for fetching all inquiries (admin only).",
+  "frontend/src/App.tsx": "Root app component using TanStack Router with two routes — `/` rendering the full public portfolio site (Navigation, all sections, Footer, WhatsApp button) and `/admin` rendering the password-protected AdminPage.",
+  "frontend/src/components/Navigation.tsx": "Sticky navigation bar with smooth-scroll links, Get Free Demo CTA, and Internet Identity login/logout controls; inbox button and onOpenInbox prop removed.",
   "frontend/src/components/HeroSection.tsx": "Full-viewport hero with gradient background, grid pattern, headline, subheadline, urgency badge, dual CTA buttons (Free Demo + WhatsApp), and trust stat indicators.",
   "frontend/src/components/AboutSection.tsx": "About Me section with Debraj Paul's exact uploaded portrait photo (served from /assets/my portfolio image-1.jpg), bio text, skill tags, location badge, and a Request Free Demo CTA button.",
   "frontend/src/components/ServicesSection.tsx": "Services section displaying 5 icon cards (Business Website, Landing Pages, Redesign, WhatsApp Integration, SEO) in a responsive grid with hover effects, plus a custom CTA card.",
@@ -12,5 +12,10 @@
   "frontend/src/components/WhyChooseMeSection.tsx": "Why Choose Me section with 5 benefit cards (48hr delivery, affordable pricing, clean design, WhatsApp support, no hidden charges) and a CTA banner.",
   "frontend/src/components/ContactSection.tsx": "Contact section with a validated inquiry form (Name, Phone, Business Type, Message) that submits to the backend canister, success state, and contact details sidebar.",
   "frontend/src/components/WhatsAppButton.tsx": "Sticky floating WhatsApp button fixed to bottom-right with green color, pulse animation, and hover tooltip \"Chat with me\".",
-  "frontend/src/components/Footer.tsx": "Footer with brand info, quick navigation links, services list, contact details, copyright with dynamic year, and caffeine.ai attribution with UTM tracking."
+  "frontend/src/components/Footer.tsx": "Footer with brand info, quick navigation links, services list, contact details, copyright with dynamic year, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/AdminInbox.tsx": "Admin inbox component that fetches and displays all contact form submissions without any Internet Identity check; includes a refresh button, loading skeletons, error state with retry, empty state, and per-submission cards showing name, phone, business type, message, timestamp, and WhatsApp reply link.",
+  "frontend/src/hooks/useAdminAuth.ts": "Custom hook managing admin authentication state via sessionStorage, with `authenticate(password)` and `logout()` functions; admin password is now set to `'debrajhero'` with exact case-sensitive matching.",
+  "frontend/src/components/AdminPasswordGate.tsx": "Password gate component that renders a centered login form with show/hide toggle and error feedback; renders children only after successful password authentication.",
+  "frontend/src/pages/AdminPage.tsx": "Dedicated admin page that wraps AdminInbox inside AdminPasswordGate with a sticky header showing the brand logo, admin badge, and a logout button that clears the session.",
+  "frontend/src/main.tsx": "App entry point with TanStack Router providing two routes — `/` for the public site (App) and `/admin` for the hidden admin page (AdminPage) — wrapped in QueryClientProvider and InternetIdentityProvider."
 }

@@ -1,8 +1,12 @@
 import Time "mo:core/Time";
 import List "mo:core/List";
-import Runtime "mo:core/Runtime";
+import MixinAuthorization "authorization/MixinAuthorization";
+import AccessControl "authorization/access-control";
 
 actor {
+  let accessControlState = AccessControl.initState();
+  include MixinAuthorization(accessControlState);
+
   type Inquiry = {
     name : Text;
     phone : Text;
@@ -13,11 +17,7 @@ actor {
 
   let inquiriesList = List.empty<Inquiry>();
 
-  public shared ({ caller }) func submitInquiry(name : Text, phone : Text, businessType : Text, message : Text) : async () {
-    if (name == "" or phone == "" or businessType == "" or message == "") {
-      Runtime.trap("All fields must be filled out");
-    };
-
+  public shared func submitInquiry(name : Text, phone : Text, businessType : Text, message : Text) : async () {
     let newInquiry : Inquiry = {
       name;
       phone;
@@ -25,7 +25,6 @@ actor {
       message;
       timestamp = Time.now();
     };
-
     inquiriesList.add(newInquiry);
   };
 

@@ -17,8 +17,15 @@ export interface Inquiry {
   'timestamp' : bigint,
   'phone' : string,
 }
+export type UserRole = { 'admin' : null } |
+  { 'user' : null } |
+  { 'guest' : null };
 export interface _SERVICE {
+  '_initializeAccessControlWithSecret' : ActorMethod<[string], undefined>,
+  'assignCallerUserRole' : ActorMethod<[Principal, UserRole], undefined>,
   'getAllInquiries' : ActorMethod<[], Array<Inquiry>>,
+  'getCallerUserRole' : ActorMethod<[], UserRole>,
+  'isCallerAdmin' : ActorMethod<[], boolean>,
   'submitInquiry' : ActorMethod<[string, string, string, string], undefined>,
 }
 export declare const idlService: IDL.ServiceClass;
