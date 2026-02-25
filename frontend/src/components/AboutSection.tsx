@@ -17,11 +17,11 @@ export default function AboutSection() {
               <div className="absolute -inset-8 rounded-3xl border border-primary/10 opacity-40" />
 
               {/* Profile image */}
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-glow">
+              <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-glow">
                 <img
-                  src="/assets/generated/avatar-debraj.dim_400x400.png"
+                  src="/assets/my portfolio image-1.jpg"
                   alt="Debraj Paul - Web Developer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
 
